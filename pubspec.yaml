@@ -1,5 +1,5 @@
 name: clean_cli
-description: A Very Good Project created by Very Good CLI.
+description: dart CLI package to deal with tedious tasks in flutter/dart projects
 version: 0.0.1
 publish_to: none
 
@@ -8,16 +8,18 @@ environment:
 
 dependencies:
   args: ^2.3.1
-  mason_logger: ^0.2.0
-  pub_updater: ^0.2.1
+  dotenv: ^4.0.1
+  mason_logger: ^0.2.3
+  process_run: ^0.12.3+2
+  pub_updater: ^0.2.3
 
 dev_dependencies:
-  build_runner: ^2.0.0
-  build_verify: ^3.0.0
-  build_version: ^2.0.0
+  build_runner: ^2.3.3
+  build_verify: ^3.1.0
+  build_version: ^2.1.1
   mocktail: ^0.3.0
-  test: ^1.19.2
-  very_good_analysis: ^3.1.0
+  test: ^1.22.1
+  lint: ^2.0.1
 
 executables:
   clean_cli:

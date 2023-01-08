@@ -1,6 +1,7 @@
 import 'package:args/args.dart';
 import 'package:args/command_runner.dart';
 import 'package:clean_cli/src/commands/commands.dart';
+import 'package:clean_cli/src/commands/deploy/deploy_command.dart';
 import 'package:clean_cli/src/version.dart';
 import 'package:mason_logger/mason_logger.dart';
 import 'package:pub_updater/pub_updater.dart';
@@ -40,6 +41,7 @@ class CleanCliCommandRunner extends CommandRunner<int> {
     // Add sub commands
     addCommand(SampleCommand(logger: _logger));
     addCommand(UpdateCommand(logger: _logger, pubUpdater: _pubUpdater));
+    addCommand(DeployCommand(logger: _logger));
   }
 
   @override
